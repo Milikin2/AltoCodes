@@ -2772,6 +2772,10 @@ button.slick-prev {
   text-align: right;
 }
 
+.sbp path {
+  stroke: none !important;
+}
+
 .payments__item input {
   display: none;
 }
@@ -2796,6 +2800,9 @@ button.slick-prev {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 0;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
 }
 
 .payments__item label:before {
@@ -2806,14 +2813,13 @@ button.slick-prev {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  margin-right: 8px;
   font-style: normal;
   border-radius: 2px;
   background: url("../img/icons/checked-white.svg") center center/0px no-repeat;
 }
 
 .payments__item label .img-convert {
-  width: 100px;
+  min-width: 98px;
   height: 70px;
   border: 1px solid #C4C4C4;
   border-radius: 8px;
@@ -2831,15 +2837,10 @@ button.slick-prev {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin-left: 20px;
 }
 
 .payments__item label .img-convert path {
   stroke: #B8B8B8;
-}
-
-.payments__item label .text-convert {
-  padding-left: 20px;
 }
 
 .payments__item label .title {
@@ -2862,15 +2863,13 @@ button.slick-prev {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
 }
 
 #payments-tabs .payments__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 0px;
-          flex: 0 1 0;
+  max-width: 240px;
 }
 
 .input-description {
